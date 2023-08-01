@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/stayle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>New Exercise</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="app-title">Todo List Project</h1>
+  </header>
+  <div class="backdrop hidden"></div>
+  <section class="container">
+    <div class="form-container">
+      <form class="todo-form">
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-circle"></i>
+        </button>
+      </form>
+      <div class="select">
+        <select name="todos" class="filter-todos">
+          <option value="all">همه</option>
+          <option value="completed">انجام شده</option>
+          <option value="uncompleted">انجام نشده</option>
+        </select>
+      </div>
+    </div>
+    <div class="todo-container">
+      <ul class="todolist">
+        <!-- <li class="todo">
+          <p class="todo__title">todo #1</p>
+          <span class="todo-createdAt">1402/3/25</span>
+          <button><i class="todo__check far fa-check-square"></i></button>
+          <button><i class="todo__remove far fa-trash-alt"></i></button>
+        </li>  -->
+      </ul>
+    </div>
+
+    <div class="modal-container hidden">
+      <h4>edit Todo</h4>
+      <input type="text" class="edit-input">
+      <div class="btn-container">
+        <button class="cancel__btn">Cancel</button>
+        <button class="edit__btn" type="submit">Edit</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="./assets/javascript.js"></script>
+</body>
+
+</html>
