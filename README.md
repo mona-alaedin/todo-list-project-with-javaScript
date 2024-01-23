@@ -1,1 +1,2 @@
-# Todo list project
+#mini project
+Todo list project with javaScript.
